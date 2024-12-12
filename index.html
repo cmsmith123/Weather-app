@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="interface">
+      <header>
+        <form id="city-form">
+          <input
+            type="search"
+            id="city-input"
+            placeholder="Enter a city..."
+            required
+            class="enter-city"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <hr />
+        <div class="current-weather">
+          <div>
+            <h1 id="city-name">London</h1>
+            <p>
+              <span id="current-time"></span>, moderate rain
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="main-temp">
+            <span class="main-temp-icon">☀️</span>
+            <span class="main-temp-temp">13</span>
+            <span class="main-temp-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Clare Smith</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+  <script src="./src/script.js"></script>
+</html>
